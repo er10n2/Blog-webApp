@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/editPost.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create.css">
+
+</head>
+<body>
+    
+    <%- include('partials/navBar') %>
+
+   
+
+    <% if(locals.post){ %>
+
+ <div class="form-container">
+
+     <div class="editPost-title">
+        <div class="editPost-innerDiv">
+                Edit Post
+        </div>
+       
+    </div>
+
+        <form id="form" action="/update/<%= post.postId%>" method="POST">
+
+            <input type="text"  class="title input" name="title" value="<%= post.postTitle %>">
+
+            <input type="text"  class="content input" name="content" value="<%= post.postContent%>">
+
+            <input type="submit" value="Update" class="submit-btn">
+
+
+        </form>
+
+    </div>
+
+
+
+    <%}%>
+
+
+    <%- include('partials/footer')%>
+   
+
+
+
+</body>
+</html>

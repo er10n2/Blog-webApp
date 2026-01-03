@@ -1,0 +1,79 @@
+body{
+   margin:0px;
+   padding:0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.form-container{
+    width:90%;
+
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 80px;
+    flex-direction: column;
+
+    min-width: fit-content;
+    height:600px;
+    min-height: fit-content;
+    margin-bottom: 40px;
+     box-shadow: 0 2px 4px rgba(125, 116, 116, 0.2);
+}
+
+
+#form{
+    width:90%;
+    min-width: fit-content;
+    height:90%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+
+   
+}
+
+#form input{
+    margin:0px;
+    padding:0px;
+    width: 40%;
+    min-width: fit-content;
+    height: 60px;
+    min-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border:none;
+   box-shadow: 0 2px 4px rgba(125, 116, 116, 0.2);
+   padding:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form input:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn{
+
+
+     background-color: #061E29;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+   
+    
+}
+.submit-btn:hover{
+     background-color: #26282f;
+   
+     color:#a8adb0;
+}

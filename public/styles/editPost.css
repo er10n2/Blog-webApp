@@ -1,0 +1,13 @@
+.editPost-title{
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    
+}
+.editPost-innerDiv{
+
+    width:90%;
+    margin: auto;
+}
