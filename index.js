@@ -6,6 +6,8 @@ import flash from 'connect-flash';
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 
@@ -131,10 +133,7 @@ app.post('/update/:id', function(req, res){
 
 
 
-
-
-app.listen(3000, function(){
-
-    console.log("listening on port 3000");
-})
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});
 
