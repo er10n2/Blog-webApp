@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/readMore.css">
+</head>
+<body>
+    
+<%- include('partials/navBar')%>
+
+
+<% if(locals.readPost){%>
+
+    <div class="readContainer">
+
+        <div class="post-title">
+            <h1><%= readPost.postTitle%></h1>
+        </div>
+
+
+        <div class="post-time">
+
+            <small>Time:</small>
+            <h4><%= readPost.date %></h4>
+
+        </div>
+
+        <div class="post-content">
+
+            <small>Content:</small>
+            <p><%= readPost.postContent%></p>
+
+        </div>
+
+
+        <div class="read-btn">
+
+            <button class="btn-r">Go back to Home</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+   
+
+<%} %>
+
+
+
+
+
+<%- include('partials/footer')%>
+</body>
+</html>

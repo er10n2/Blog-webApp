@@ -132,6 +132,33 @@ app.post('/update/:id', function(req, res){
 
 
 
+app.get('/read/:id', (req,res)=>{
+
+     const postt = req.params.id;
+
+    const postToRead = posts.find(function(post){
+        return  post.postId === postt;
+    })
+
+
+    if(postToRead){
+
+        res.render('read', {
+            readPost : postToRead,
+        })
+
+
+    }else{
+        res.redirect('/');
+    }
+
+
+});
+
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);

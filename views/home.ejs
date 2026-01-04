@@ -50,7 +50,9 @@
                 </div>
 
                 <div class="readMoreBtn-div">
-                    <button class="read-btn">Read More</button>
+                    
+
+                    <a href="/read/<%= post.postId %>"   class="read-btn read">Read More</a>
 
                     <form action="/deletePosts/<%=post.postId %>" method="POST" onsubmit="return confirm('Are you sure that you want to delete this post?')" >
 
