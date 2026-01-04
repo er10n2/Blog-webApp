@@ -73,10 +73,10 @@ body{
     color:#fff;
     cursor: pointer;
     font-size: 1.5rem;
+     text-decoration: none;
 
 
 }
-
 @media (max-width: 768px) {
     html{
      
