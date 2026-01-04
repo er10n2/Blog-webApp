@@ -33,7 +33,7 @@ body{
 
 .postCard{
     min-height: 30%;
-    border-radius: 1.2rem;
+    border-radius: 12px;
     padding:2rem;
     display: flex;
     flex-direction: column;
@@ -173,6 +173,16 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+    }
+    .readMoreBtn-div form {
+        width: 100%;
     }
     
+    .read-btn{
+        width:100%;
+    }
+    .postCard{
+            flex-basis: 100%;
+    }
 }
