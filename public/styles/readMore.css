@@ -23,6 +23,7 @@ body{
     padding:2rem;
     text-align: left;
     margin-bottom: 40px;
+    border-radius: 10px;
 }
 
 .post-title{

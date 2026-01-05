@@ -1,3 +1,8 @@
+
+html{
+    font-size: 62.5%;
+}
+
 .editPost-title{
     width:90%;
     margin:auto;
@@ -10,4 +15,11 @@
 
     width:90%;
     margin: auto;
+}
+
+#error{
+    color:red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-top:1rem;
 }
